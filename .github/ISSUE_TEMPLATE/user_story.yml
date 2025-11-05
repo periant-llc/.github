@@ -1,6 +1,5 @@
 name: 📖 User Story
 description: Create a new user story for a development task.
-title: "USER STORY: "
 assignees:
   - # Add default assignees if needed
 body:

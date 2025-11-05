@@ -1,11 +1,1 @@
 blank_issues_enabled: false
-contact_links:
-  - name: 📚 Documentation
-    url: https://github.com/your-org/your-repo/wiki
-    about: Check our documentation for common questions and guides
-  - name: 💬 Discussions
-    url: https://github.com/your-org/your-repo/discussions
-    about: Ask questions and discuss ideas with the community
-  - name: 🆘 Support
-    url: https://github.com/your-org/your-repo/discussions/categories/q-a
-    about: Get help from the community

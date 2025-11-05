@@ -1,6 +1,5 @@
 name: 🛠️ Technical Task
 description: Create a sub-task for an existing user story.
-title: "TASK: "
 assignees:
   - # Add default assignees if needed
 body:
