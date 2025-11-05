@@ -1,43 +1,27 @@
 ---
 name: 🐞 Bug Fix
-about: Submit a fix for a bug.
-title: "fix: "
-labels: "bug"
+about: This PR fixes a bug.
 ---
 
-### Context and Intent
-
----
-
-### Change Type
-
--   [ ] ✨ **Feature**
--   [x] 🐞 **Fix**
--   [ ] 💥 **Breaking Change**
--   [ ] 🔒 **Security**
+## Description
 
 ---
 
-### Testing Notes
+## 🔗 Related Issue
+
+Fixes: # ---
+
+## 🎯 Type of Change
+
+- [ ] 🐞 Bug fix (non-breaking change which fixes an issue)
+- [ ] ❗ Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
 ---
 
-### Risk and Rollback
+## ✅ Validation
 
----
+- [ ] Added a new test case that fails _without_ this change
+- [ ] Manually reproduced the bug, then verified the fix
+- [ ] All CI checks are passing
 
-### References
-
--   [ ] [GitHub Issue](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
--   [ ] [GitHub Pull Request](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
--   [ ] [GitHub Discussion](XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
-
----
-
-### Contributor Checklist
-
--   [ ] I have read the contributing guidelines.
--   [ ] My code follows the project's standards.
--   [ ] I have added a test that reproduces the bug and proves the fix.
--   [ ] All tests passed.
--   [ ] I have updated the documentation if necessary.
+### Screenshots (if applicable)

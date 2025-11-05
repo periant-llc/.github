@@ -1,0 +1,93 @@
+name: 📖 User Story
+description: Create a new user story for a development task.
+title: "USER STORY: "
+assignees:
+  - # Add default assignees if needed
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      description: Select the type of issue
+      options:
+        - epic
+        - task
+        - feature
+        - bug
+        - user story
+      default: 4  # user story (0-indexed)
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      description: Which team will handle this issue?
+      options:
+        - engineering
+        - product
+        - design
+        - qa
+      default: 0  # engineering
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User Story
+      description: Describe the user story in the standard format
+      placeholder: |
+        **As a** [type of user],
+        **I want to** [perform some action],
+        **So that** [I can achieve some goal/benefit].
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the acceptance criteria for this user story
+      placeholder: |
+        - [ ] **Given** [some context], **when** [I perform an action], **then** [I expect this outcome].
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_notes
+    attributes:
+      label: Technical Notes (Optional)
+      description: Any technical considerations or implementation notes
+    validations:
+      required: false
+
+  - type: input
+    id: designs_link
+    attributes:
+      label: Designs / Mockups Link (Optional)
+      description: Link to designs or mockups
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References (Optional)
+      description: Any relevant references or links
+      placeholder: |
+        - [ ] [Reference 1]
+        - [ ] [Reference 2]
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information (Optional)
+      description: Any other relevant information
+    validations:
+      required: false

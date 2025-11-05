@@ -1,0 +1,74 @@
+name: 🛠️ Technical Task
+description: Create a sub-task for an existing user story.
+title: "TASK: "
+assignees:
+  - # Add default assignees if needed
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      description: Select the type of issue
+      options:
+        - epic
+        - task
+        - feature
+        - bug
+        - user story
+      default: 1  # task
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      description: Which team will handle this issue?
+      options:
+        - engineering
+        - product
+        - design
+        - qa
+      default: 0  # engineering
+    validations:
+      required: true
+
+  - type: input
+    id: parent_story
+    attributes:
+      label: Parent User Story
+      description: Link to the parent user story or epic
+      placeholder: "#123 or https://github.com/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: task_description
+    attributes:
+      label: Task Description
+      description: Describe what needs to be done in this task
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_details
+    attributes:
+      label: Implementation Details (Optional)
+      description: Technical details about how this should be implemented
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition_of_done
+    attributes:
+      label: Definition of Done
+      description: Check off items as they are completed
+      options:
+        - label: Code is implemented
+          required: false
+        - label: Unit tests are written and passing
+          required: false
+        - label: The parent user story's acceptance criteria related to this task are met
+          required: false
+        - label: Code has been peer-reviewed
+          required: false

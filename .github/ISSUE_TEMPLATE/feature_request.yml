@@ -1,0 +1,75 @@
+name: ✨ Feature Request
+description: Suggest an idea for this project
+title: "[FEAT] "
+assignees:
+  - # Add default assignees if needed
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      description: Select the type of issue
+      options:
+        - epic
+        - task
+        - feature
+        - bug
+        - user story
+      default: 2  # feature
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      description: Which team will handle this issue?
+      options:
+        - engineering
+        - product
+        - design
+        - qa
+      default: 1  # product (since feature requests often come from product team)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: existing_feature
+    attributes:
+      label: Is there an existing feature request for this?
+      description: Please search to see if a feature request already exists.
+      options:
+        - label: I have searched the existing feature requests
+          required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this feature solve? What is the motivation for this feature?
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired_solution
+    attributes:
+      label: Desired Solution
+      description: A clear and concise description of what you want to happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered (Optional)
+      description: A clear and concise description of any alternative solutions or features you've considered
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context (Optional)
+      description: Add any other context or screenshots about the feature request here
+    validations:
+      required: false
