@@ -2,6 +2,7 @@ name: 🚀 Epic
 description: Define a new epic that groups multiple user stories.
 assignees:
   - # Add default assignees if needed
+body:
   - type: textarea
     id: business_goal
     attributes:
