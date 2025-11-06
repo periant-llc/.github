@@ -2,53 +2,11 @@ name: 🚀 Epic
 description: Define a new epic that groups multiple user stories.
 assignees:
   - # Add default assignees if needed
-body:
-  - type: dropdown
-    id: type
-    attributes:
-      label: Issue Type
-      description: Select the type of issue
-      options:
-        - epic
-        - task
-        - feature
-        - bug
-        - user story
-      default: 0  # epic
-    validations:
-      required: true
-  
-  - type: dropdown
-    id: team
-    attributes:
-      label: Team
-      description: Which team will handle this issue?
-      options:
-        - engineering
-        - product
-        - design
-        - qa
-      default: 0  # engineering
-    validations:
-      required: true
-
   - type: textarea
     id: business_goal
     attributes:
       label: Business Goal
       description: What business goal does this epic achieve?
-    validations:
-      required: true
-
-  - type: textarea
-    id: scope
-    attributes:
-      label: Scope
-      description: List the user stories that are part of this epic
-      placeholder: |
-        - [ ] User Story 1: [Title]
-        - [ ] User Story 2: [Title]
-        - [ ] ...
     validations:
       required: true
 

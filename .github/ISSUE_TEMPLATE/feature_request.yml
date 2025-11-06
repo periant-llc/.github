@@ -3,35 +3,6 @@ description: Suggest an idea for this project
 assignees:
   - # Add default assignees if needed
 body:
-  - type: dropdown
-    id: type
-    attributes:
-      label: Issue Type
-      description: Select the type of issue
-      options:
-        - epic
-        - task
-        - feature
-        - bug
-        - user story
-      default: 2  # feature
-    validations:
-      required: true
-  
-  - type: dropdown
-    id: team
-    attributes:
-      label: Team
-      description: Which team will handle this issue?
-      options:
-        - engineering
-        - product
-        - design
-        - qa
-      default: 1  # product (since feature requests often come from product team)
-    validations:
-      required: true
-
   - type: checkboxes
     id: existing_feature
     attributes:
