@@ -4,7 +4,7 @@ Thank you for your interest in contributing! We welcome all contributions, but b
 
 ## Development Workflow
 
-1.  **Clone the Repositories**: Clone both the `periant-core`, `periant-service-ai` repositories.
+1.  **Clone the Repositories**: Clone both the `periant-core`, `periant-service-agent` repositories.
 2.  **Install Dependencies**: Run `pnpm install` in the `periant-core` root.
 3.  **Start Services**: Run `task start-full-stack` to start all necessary development services, including Supabase and the backend.
 4.  **Run Dev Server**: Start the application you're working on, for example: `pnpm dev --filter=@apps/studio`.
